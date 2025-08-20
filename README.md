@@ -1,30 +1,56 @@
-----------------------------------
-ESPANHOL
-----------------------------------
+# Test SPS React
 
-## PRUEBA SPS REACT
+Sistema de gerenciamento de usuários com histórico de operações.
 
-- Crear un CRUD de usuarios
+## Pré-requisitos
 
-## Reglas
+- Node.js (versão 14 ou superior)
+- npm
 
-- Crear la página de inicio de sesión (signIn) para autenticar al usuario (usar el usuario previamente registrado para validar).
-- Se puede utilizar cualquier tipo de almacenamiento para guardar el token.
-- Solo será posible registrar y/o visualizar usuarios si el usuario está autenticado.
-- Consumir la API creada anteriormente (test-sps-server).
+## Instalação e Execução
 
+### Frontend (React)
 
-----------------------------------
-PORTUGUÊS
-----------------------------------
+1. Instale as dependências:
+```bash
+npm install
+```
 
-# SPS REACT TEST
+2. Execute o projeto:
+```bash
+npm start
+```
 
-- Criar um CRUD de usuários
+O frontend estará disponível em `http://localhost:3000`
 
-# Regras
+### Backend (Node.js/Express)
 
-- Criar a página de signIn para fazer a autenticação do usuário (Usar o usuário previamente cadastrado para validar)
-- Pode usar qualquer tipo de storage para guardar o token
-- Só será possível cadastrar e/ou visualizar os usuários se estiver autenticado
-- Chamar a API que foi criada anteriormente (test-sps-server)
+1. Navegue para a pasta do servidor:
+```bash
+cd ../test-sps-server
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Execute o servidor:
+```bash
+npm start
+```
+
+O backend estará disponível em `http://localhost:3001`
+
+## Funcionalidades
+
+- Autenticação de usuários
+- CRUD de usuários (criar, editar, excluir)
+- Histórico de operações (apenas para administradores)
+- Interface responsiva com Material-UI
+
+## Usuário Padrão
+
+- **Email**: admin@test.com
+- **Senha**: admin123
+- **Tipo**: admin
